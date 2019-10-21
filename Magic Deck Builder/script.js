@@ -53,7 +53,7 @@ function filtro(value, count) {
 function filtroColor(value, count) {
     let imagen = document.getElementById('checkMana' + value)
     imagen.src = `imagenes/Mana_${value}.png`;
-    cambioColor();
+    cambioColor(value);
     url = set + '&page=' + count + '&colorIdentity=' + value;
     fetch(url)
         .then(cogerDatos => {
@@ -170,4 +170,37 @@ function mostrarMazo() {
     }
 }
 
-
+/* Desactivar iconos de color*/
+function cambioColor(value) {
+    let imagenW = document.getElementById('checkManaW');
+    let imagenB = document.getElementById('checkManaB');
+    let imagenU = document.getElementById('checkManaU');
+    let imagenG = document.getElementById('checkManaG');
+    let imagenR = document.getElementById('checkManaR');
+    if (value === 'W'){
+        imagenB.src=`imagenes/black.png`;
+        imagenU.src=`imagenes/blue.png`;
+        imagenG.src=`imagenes/green.png`;
+        imagenR.src=`imagenes/red.png`;
+    }else if( value === 'B'){
+        imagenW.src=`imagenes/white.png`;
+        imagenU.src=`imagenes/blue.png`;
+        imagenG.src=`imagenes/green.png`;
+        imagenR.src=`imagenes/red.png`;
+    }else if( value === 'U'){
+        imagenB.src=`imagenes/black.png`;
+        imagenW.src=`imagenes/white.png`;
+        imagenG.src=`imagenes/green.png`;
+        imagenR.src=`imagenes/red.png`;
+    }else if(value === 'G'){
+        imagenB.src=`imagenes/black.png`;
+        imagenU.src=`imagenes/blue.png`;
+        imagenW.src=`imagenes/white.png`;
+        imagenR.src=`imagenes/red.png`;
+    }else if(value === 'R'){
+        imagenB.src=`imagenes/black.png`;
+        imagenU.src=`imagenes/blue.png`;
+        imagenG.src=`imagenes/green.png`;
+        imagenW.src=`imagenes/white.png`;
+    }
+}
