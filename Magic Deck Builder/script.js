@@ -106,6 +106,7 @@ function favorita(name, id) {
             </div>`;
     pos = pos + 1;
 }
+
 function quitarFavorito(pos) {
     cartasFavoritas.splice(pos, 1)
     let sideDeck = document.getElementById('listaCartas');
@@ -177,30 +178,30 @@ function cambioColor(value) {
     let imagenU = document.getElementById('checkManaU');
     let imagenG = document.getElementById('checkManaG');
     let imagenR = document.getElementById('checkManaR');
-    if (value === 'W'){
-        imagenB.src=`imagenes/black.png`;
-        imagenU.src=`imagenes/blue.png`;
-        imagenG.src=`imagenes/green.png`;
-        imagenR.src=`imagenes/red.png`;
-    }else if( value === 'B'){
-        imagenW.src=`imagenes/white.png`;
-        imagenU.src=`imagenes/blue.png`;
-        imagenG.src=`imagenes/green.png`;
-        imagenR.src=`imagenes/red.png`;
-    }else if( value === 'U'){
-        imagenB.src=`imagenes/black.png`;
-        imagenW.src=`imagenes/white.png`;
-        imagenG.src=`imagenes/green.png`;
-        imagenR.src=`imagenes/red.png`;
-    }else if(value === 'G'){
-        imagenB.src=`imagenes/black.png`;
-        imagenU.src=`imagenes/blue.png`;
-        imagenW.src=`imagenes/white.png`;
-        imagenR.src=`imagenes/red.png`;
-    }else if(value === 'R'){
-        imagenB.src=`imagenes/black.png`;
-        imagenU.src=`imagenes/blue.png`;
-        imagenG.src=`imagenes/green.png`;
-        imagenW.src=`imagenes/white.png`;
+    if (value === 'W') {
+        imagenB.src = `imagenes/black.png`;
+        imagenU.src = `imagenes/blue.png`;
+        imagenG.src = `imagenes/green.png`;
+        imagenR.src = `imagenes/red.png`;
+    } else if (value === 'B') {
+        imagenW.src = `imagenes/white.png`;
+        imagenU.src = `imagenes/blue.png`;
+        imagenG.src = `imagenes/green.png`;
+        imagenR.src = `imagenes/red.png`;
+    } else if (value === 'U') {
+        imagenB.src = `imagenes/black.png`;
+        imagenW.src = `imagenes/white.png`;
+        imagenG.src = `imagenes/green.png`;
+        imagenR.src = `imagenes/red.png`;
+    } else if (value === 'G') {
+        imagenB.src = `imagenes/black.png`;
+        imagenU.src = `imagenes/blue.png`;
+        imagenW.src = `imagenes/white.png`;
+        imagenR.src = `imagenes/red.png`;
+    } else if (value === 'R') {
+        imagenB.src = `imagenes/black.png`;
+        imagenU.src = `imagenes/blue.png`;
+        imagenG.src = `imagenes/green.png`;
+        imagenW.src = `imagenes/white.png`;
     }
 }

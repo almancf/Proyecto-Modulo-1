@@ -63,7 +63,7 @@
   
 .boton:hover, .btn-borde:active, .btn-borde:focus {
     color: #fff;
-    background-color: rgb(119, 16, 16);
+    background-color: #58A4EB;;
 }
 
 body{
@@ -99,7 +99,7 @@ header{
 
 aside{
     color: white;
-    background-color: rgb(119, 16, 16);
+    background-color: #58A4EB;;
     height: auto;
     align-self: flex-start;
     width: 15%;
