@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+    <title>Standard Builder</title>
+</head>
+
+<body>
+    <header>
+        <img class="imghead2"
+            src="imagenes/IMGBIN_magic-the-gathering-pro-tour-board-game-htcs-legacy-png_9K6yGaBD.png" />
+        <img class="imghead" src="imagenes/IMGBIN_magic-the-gathering-commander-teferi-png_fifRKqXy.png" />
+        <div class="pill-nav">
+            <a class="active" href="index.html">Home</a>
+            <a href="Coleccion.html">Colección</a>
+            <a href="miSeleccion.html">Selección</a>
+        </div>
+    </header>
+
+    <h1>Modo de Juego: Standard</h1>
+    <h3>Filtra por set de juego y color</h3>
+    <div>
+        <button class="boton" onclick="filtro('ELD',1)">Throne of Eldraine</button>
+        <button class="boton" onclick="filtro('M20',1)">Core Set 2020</button>
+        <button class="boton" onclick="filtro('WAR',1)">War of the Spark</button>
+        <button class="boton" onclick="filtro('RNA',1)">Ravnica Allegiance</button>
+        <button class="boton" onclick="filtro('GRN',1)">Guilds of Ravnica</button>
+    </div>
+    <div>
+        <!--<button class="boton" onclick="filtroColor('W')">Blanco</button>
+        <button class="boton" onclick="filtroColor('B')">Negro</button>
+        <button class="boton" onclick="filtroColor('U')">Azul</button>
+        <button class="boton" onclick="filtroColor('G')">Verde</button>
+        <button class="boton" onclick="filtroColor('R')">Rojo</button>-->
+        <img src="imagenes/white.png" class="checkMana" id="checkManaW" onclick="filtroColor('W',1)">
+        <img src="imagenes/black.png" class="checkMana" id="checkManaB" onclick="filtroColor('B',1)">
+        <img src="imagenes/blue.png" class="checkMana" id="checkManaU" onclick="filtroColor('U',1)">
+        <img src="imagenes/green.png" class="checkMana" id="checkManaG" onclick="filtroColor('G',1)">
+        <img src="imagenes/red.png" class="checkMana" id="checkManaR" onclick="filtroColor('R',1)">
+    </div>
+    <div id="general">
+        <div class="deckList">
+            <div>
+                <div id="galeria"></div>
+                <div id="paginacion"></div>
+            </div>
+        </div>
+        <aside id="deck">
+            <h3>Deck List</h3>
+            <div id="listaCartas"></div>
+            <button class="boton" onclick="guardarMazo()">Guardar</button>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

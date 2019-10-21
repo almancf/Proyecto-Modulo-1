@@ -1,0 +1,251 @@
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+#general{
+    display: flex;
+    justify-content: space-around;
+}
+
+#cartasColeccion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#mazoGuardado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagen{
+    width: 50%;
+    transition: 1s;
+}
+
+.imagen:hover{
+    width: 100%;
+}
+
+#deck{
+    display: flex;
+    flex-direction: column; 
+}
+
+.deckList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    width: 70%;
+}
+
+.decklist p{
+    margin-top: 0;
+}
+.checkMana{
+    width: 3%;
+    margin: 10px 10px;
+}
+.checkMana img{
+    padding: 10px;
+}
+
+
+.boton {
+    padding: .375rem .75rem;
+    border: 1px solid rgb(119, 16, 16);
+    border-radius: .25rem;
+    color: rgb(119, 16, 16);
+    transition: color .15s ease-in-out;
+    background-color: .15s ease-in-out;
+}
+  
+.boton:hover, .btn-borde:active, .btn-borde:focus {
+    color: #fff;
+    background-color: rgb(119, 16, 16);
+}
+
+body{
+    font-family: 'Mukta', sans-serif;
+    margin:0;
+    background-color: antiquewhite;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    position: sticky;
+    height: 132px;
+    border: 1px solid black;
+    top: 0;
+    background-color: #58A4EB;
+    
+}
+
+.imghead{
+    width: 18%;
+    position: absolute;
+    left: 1240px;
+    top: -7px;
+}
+.imghead2{
+    width: 25%;
+    position: absolute;
+    left: auto;
+    top: 1px;
+}
+
+aside{
+    color: white;
+    background-color: rgb(119, 16, 16);
+    height: auto;
+    align-self: flex-start;
+    width: 15%;
+    border: 1px solid black;
+    box-shadow: 3px 5px grey;
+    align-items: center;
+}
+.pill-nav{
+    position: absolute;
+    top: 5px;
+    font-size: 1.50rem;
+    right: 1223px;
+    display: flex;
+    
+}
+.sideImage{
+    margin-left: 17px;
+}
+.menu a{
+    background-color: #E61E1E;
+    border: 1px solid #400808;
+    border-radius: 5px;
+    box-shadow: 1px 1px black;
+    width: 148px;
+    text-decoration: none;
+}
+.cartas{
+    width: 265px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    /*border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  /* Style the links inside the pill navigation menu */
+.pill-nav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  
+  /* Change the color of links on mouse-over */
+  .pill-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .pill-nav a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  #paginacion{
+      display: flex;
+      justify-content: center;
+  }
+  #paginacionColeccion{
+    display: flex;
+    justify-content: center;
+  }
+  .paginacion {
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  .paginacion a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid rgb(163, 162, 162);
+  }
+  .paginacion a:hover:not(.active) {
+      background-color: rgb(163, 162, 162);
+    }
+
+
+#portada{
+    background-image: url('imagenes/IMGBIN_magic-the-gathering-duels-of-the-planeswalkers-magic-the-gathering-online-wizards-of-the-coast-png_n1zgw3zS.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 635px;
+}
+#desplegables{
+    display: flex;
+    margin-left: 20px;
+    justify-content: flex-start;
+}
+@media only screen and (max-width:600px){
+    .imghead{
+        width: 46%;
+        position: absolute;
+        left: 223px;
+        top: -5px;
+    }
+    .imghead2{
+        width: 30%;
+        position: absolute;
+        left: auto;
+        top: 2px;
+    }
+    .menu{
+        position: absolute;
+        top: 1px;
+        font-size: 1rem;
+        right: 325px;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu a{
+        width: 80px;
+    }
+    header{
+        height: 91px;
+    }
+    .pill-nav{
+        position: absolute;
+        top: 38px;
+        font-size: 1.50rem;
+        right: 117px;
+        display: flex;
+    }
+    aside{
+        width: 30%;
+    }
+    .checkMana{
+        width: 9%;
+    }
+    .pill-nav a{
+        padding: 12px;
+    }
+}
